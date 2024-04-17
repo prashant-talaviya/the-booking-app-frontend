@@ -1,0 +1,148 @@
+
+.reserve {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Increased opacity for semi-transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  
+  .rContainer {
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    max-width: 800px; /* Adjusted for wider container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox to layout child elements side by side */
+}
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .custom-input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005a9e;
+  }
+  
+  .rClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+  }
+
+.rItem{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.rInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.rTitle{
+    font-weight: 500;
+}
+.rDesc{
+    font-weight: 300;
+}
+.rMax{
+    font-size: 12px;
+}
+.rPrice{
+    font-weight: 500;
+}
+
+.rSelectRooms{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 8px;
+    color: gray;
+}
+
+.room{
+    display: flex;
+    flex-direction: column;
+}
+
+.rButton{
+    border:none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.leftSection,
+.rightSection {
+    flex: 1; /* Each section takes up equal space */
+    padding: 10px;
+}
+
+/* Add styles to align the title, description, and input fields */
+.leftSection label,
+.rightSection label,
+.leftSection .rDesc,
+.rightSection .rDesc {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.leftSection .room,
+.rightSection .room {
+    margin-bottom: 10px;
+}
+
+.leftSection .room input[type="checkbox"],
+.rightSection .room input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.leftSection .rPrice,
+.rightSection .rPrice {
+    font-weight: bold;
+}

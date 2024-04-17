@@ -1,0 +1,223 @@
+.header {
+  /* background-color: #003580; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerDesc {
+  margin: 20px 0px;
+}
+
+.headerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.headerSearch {
+  height: 30px;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.headerIcon {
+  color: lightgray;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+
+
+
+
+/* ... existing styles ... */
+/* 
+.headerSearchItem {
+  position: relative;
+} */
+
+.destinationSuggestions {
+  position: absolute;
+  color: black;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.destinationSuggestions li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.destinationSuggestions li:last-child {
+  border-bottom: none;
+}
+
+.destinationSuggestions li:hover {
+  background-color: #f7f7f7;
+}
+
+/* ... additional styles ... */
+.datePickerContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  /* This makes it appear right below the date input */
+  z-index: 10;
+  /* Ensure it's above other content */
+  /* ... any additional styles you need ... */
+}
+
+/* Make sure to clear the date picker styles if it has margins that push it around */
+.dateRange {
+  margin: 0;
+}
+
+
+
+
+.datePickerContainer .rdrDateRangeWrapper {
+  width: auto;
+  /* adjust this to ensure it's wide enough */
+}
+
+.datePickerContainer .rdrDateRangeWrapper .rdrWeekDays {
+  display: flex;
+}
+
+.datePickerContainer .rdrDateRangeWrapper .rdrWeekDay {
+  flex: 1;
+  text-align: center;
+}
+
+.datePickerContainer .rdrDateRangeWrapper .rdrDays {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.datePickerContainer .rdrDateRangeWrapper .rdrDay {
+  flex: 1 0 14%;
+  /* adjust this percentage to fit the container */
+  text-align: center;
+}
+
+/* Ensures that the date picker container has enough width and doesn't overflow */
+.datePickerContainer {
+  width: 100%;
+  /* or more, as needed */
+  overflow: visible;
+}

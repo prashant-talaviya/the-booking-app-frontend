@@ -1,0 +1,22 @@
+.homemain{
+    background-image: url('../../img/bg.png');
+}
+
+
+
+.homeContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    transition: background-color 0.1s ease;
+}
+
+.homeTitle{
+    width: 1024px;
+    font-size: 20px;
+}
+

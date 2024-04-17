@@ -1,0 +1,118 @@
+/* Adjust these styles to match your website's design */
+
+.my-bookings {
+   
+  background-color: #f9f9f9;
+  
+}
+
+.my-bookings h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.booking-list {
+  width: 700px;
+  list-style: none;
+  padding: 0;
+}
+
+.booking-item {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.booking-item:hover{
+  background-color: #bababab0;
+}
+
+.booking-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-info p {
+  margin: 5px 0;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.booking-actions button {
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: rgb(6, 6, 6);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.booking-actions button:hover {
+  background-color: #005aa6;
+}
+
+/* Add more styles as needed for other reservation details */
+
+
+
+.booking-item {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-info {
+  display: flex;
+  align-items: center;
+}
+
+.hotel-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.hotel-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.date-info, .guest-info, .price-info {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.date-info svg, .guest-info svg, .price-info svg {
+  margin-right: 8px;
+}
+
+/* Additional styles for the details inside .date-info, .guest-info, and .price-info can be added here */
+
+
+
+
+
+
+
+

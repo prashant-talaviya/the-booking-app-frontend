@@ -1,0 +1,227 @@
+/* Styles for the Flight Results Header */
+.flight-results-header {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+.flight-results-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Styles for the Flight Results List */
+.flight-results-list {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.flight-card {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.flight-card:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the Seat Selection Modal */
+.flight-seat-selection-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.seats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.seat {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background: #f4f4f4;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.seat.selected {
+  background-color: #4CAF50; /* Green */
+}
+
+.seat.booked {
+  background-color: #F44336; /* Red */
+  cursor: not-allowed;
+}
+
+/* Styles for the Passenger Details Form inside the Modal */
+.passenger-details-form {
+  margin-top: 20px;
+}
+
+.passenger-details-form input[type="text"],
+.passenger-details-form input[type="number"],
+.passenger-details-form input[type="email"],
+.passenger-details-form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Styles for the Book and Cancel Buttons */
+.book-btn, .close-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover, .close-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .flight-results-header-container, .flight-results-list {
+    padding: 0 10px;
+  }
+
+  .flight-seat-selection-modal {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+
+
+
+.flight-results-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.airline-logo img {
+  height: 40px; /* Adjust as needed */
+}
+
+.flight-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.flight-details > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.city,
+.non-stop {
+  font-size: 0.9em;
+}
+
+.price {
+  text-align: right;
+}
+
+.amount {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4CAF50; /* Adjust the color to match your theme */
+}
+
+.per-adult {
+  font-size: 0.8em;
+}
+
+.view-prices-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.flight-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.details-btn {
+  background: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Additional styles for responsiveness and other states */
+@media (max-width: 768px) {
+  .flight-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flight-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flight-details > div {
+    align-items: flex-start;
+  }
+
+  .price, .flight-promo {
+    align-items: flex-start;
+  }
+}

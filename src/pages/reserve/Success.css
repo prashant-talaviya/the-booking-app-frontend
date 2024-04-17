@@ -1,0 +1,51 @@
+/* Success.css */
+.success-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4CAF50; /* Background color for the confetti animation */
+    overflow: hidden;
+  }
+  
+  .success-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure content is on top of confetti */
+  }
+  
+  .feather {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+  }
+  
+ .mytext {
+    color: #4CAF50;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .mytextpara {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #45A049;
+  }
+  

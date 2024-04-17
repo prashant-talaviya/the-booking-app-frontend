@@ -1,0 +1,133 @@
+/* Style the seat selection and booking form */
+.seat-selection-modal {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+}
+
+/* Style individual seats */
+.seat {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background: #f4f4f4;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background: #4CAF50; /* Green for selected */
+}
+
+.seat.booked {
+  background: #F44336; /* Red for booked */
+  cursor: not-allowed;
+}
+
+/* Style for the form inputs */
+.passenger-details-form input {
+  margin: 10px 0;
+  margin-left: 20px;
+  padding: 10px;
+  width: calc(100% - 40px); /* to account for padding and borders */
+  box-sizing: border-box; /* to ensure padding doesn't affect width */
+  border: 1px solid #000; /* Add a 1px solid black border */
+
+}
+
+/* Style for the book and close buttons */
+.book-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background: #0056b3;
+}
+
+/* Close button (X) inside the modal */
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+/* General styles for bus card */
+.bus-card {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+/* Style for the bus details inside the card */
+.bus-info,
+.bus-timing,
+.bus-booking {
+  margin-bottom: 10px;
+}
+
+/* Style for the price and seats left */
+.price,
+.seats-left {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Style for the select seat button */
+.select-seat-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.select-seat-btn:hover {
+  background: #218838;
+}
+
+
+
+
+/* 
+.seats-container {
+  position: relative;
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 10px auto;
+  width: fit-content;
+} */
+
+
+.seats-container {
+  border: 2px solid #000;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* Adjust the gap size to represent the aisle width */
+  padding: 20px;
+  margin: 10px auto;
+  max-width: fit-content;
+}
+
+.row-gap {
+  text-align: center;
+  color: #3333337c;
+  width: 100%; /* This will push subsequent seats to the next line */
+  height: 20px; /* This creates a gap in the seating */
+}

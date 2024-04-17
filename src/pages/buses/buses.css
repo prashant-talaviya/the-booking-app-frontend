@@ -1,0 +1,366 @@
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  grid-area: 10px;
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerDesc {
+  margin: 20px 0px;
+}
+
+.headerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.headerSearch {
+  height: 30px;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.headerIcon {
+  color: lightgrey;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: grey;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+/* How to book */
+
+.howToBookContainer {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.howToBookContainer h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.stepsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.step {
+  width: 250px; /* Sets the width of the step box */
+  height: 250px; /* Sets the height of the step box to match the width, making it square */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  justify-content: center; /* Centers the content vertically */
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.step p {
+  margin-top: 10px;
+  font-size: 14px; /* Adjust font size if necessary */
+  color: #666;
+  text-align: center;
+}
+
+/* FontAwesome Icons specific styling */
+.faBus,
+.faTicket,
+.faCreditCard {
+  color: #0071c2;
+  margin-bottom: 10px;
+}
+
+/* top routes  */
+
+.routes {
+  display: flex;
+
+
+}
+
+
+.top-routes {
+  /* display: flex; */
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.top-routes h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Container for the grid of routes */
+.routes-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15vh;
+  gap: 10px;
+  /* width: ; */
+}
+
+.routes-item {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vh;
+}
+
+.routes-info {
+  display: flex;
+  align-items: center;
+}
+
+.routes-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.routes-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.starting-info,
+.exp-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.view-all-button {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-all-button:hover,
+.view-all-button:focus {
+  background-color: #003580;
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+.bus-results-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 60%;
+  margin-left: 40vh;
+}
+
+.bus-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  background: #f8f8f8;
+}
+
+.bus-card:hover {
+  background-color: #eeeeee;
+}
+
+.bus-info {
+  flex-basis: 20%;
+}
+
+.bus-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.bus-type {
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.bus-rating {
+  color: #f80;
+  font-size: 0.9em;
+}
+
+.bus-timing {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.departure-time,
+.arrival-time {
+  font-weight: bold;
+}
+
+.duration {
+  color: #666;
+  margin: 8px 0;
+}
+
+.bus-booking {
+  flex-basis: 30%;
+  text-align: right;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.seats-left {
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.select-seat-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.select-seat-btn:hover {
+  background-color: #0056b3;
+}
+
+.no-buses-found {
+  text-align: center;
+  padding: 20px;
+}
